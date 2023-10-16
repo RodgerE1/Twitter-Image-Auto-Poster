@@ -1,2 +1,5 @@
 git add .gitignore
 .env
+*.jpg
+*.png
+*.jpeg
