@@ -4,6 +4,7 @@ import os
 import time
 import shutil
 import glob
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import QTimer
@@ -180,14 +181,13 @@ def main():
     # Organize the layout as per the provided image
     layout.addWidget(time_label, 0, 0, 1, 2)
     layout.addWidget(remaining_images_label, 0, 2, 1, 2)
-    layout.addWidget(countdown_label, 0, 4, 1, 2)
+    layout.addWidget(countdown_label, 0, 4)
+    layout.setAlignment(countdown_label, Qt.AlignRight)  # Right justify the countdown
 
-    layout.addWidget(tweet_sent_label, 1, 0)
-    layout.addWidget(tweet_sent_time_label, 1, 1)
+    layout.addWidget(tweet_sent_time_label, 1, 0)  # Only time for Tweet Sent
     layout.addWidget(thumbnail_label, 2, 0, 2, 2)
 
-    layout.addWidget(next_tweet_label, 1, 4)
-    layout.addWidget(next_tweet_time_label, 1, 5)
+    layout.addWidget(next_tweet_time_label, 1, 4, 1, 2)  # Only time for Next Tweet
     layout.addWidget(next_thumbnail_label, 2, 4, 2, 2)
 
     window.setLayout(layout)
