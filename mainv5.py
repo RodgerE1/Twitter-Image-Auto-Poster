@@ -79,11 +79,11 @@ def reset_tweet_count_if_needed(config):
 
 def authenticate():
     # Get API tokens from environment variables
-    bearer_token = "AAAAAAAAAAAAAAAAAAAAACBNqQEAAAAAAvpeIlap3NFbyIS79nC3k9urHbE%3DgQ89Z2RA5L6GQe9MTtdeRXMCevdSF95IVP2GhR2IIomtVjM2dN"
-    consumer_key = "OUpCgrIwhfj8wEAu5tZaXcsUC"
-    consumer_secret = "1npz1fpvGucQaLRYy78uQ10WXase5f8uhpgUcvajjjqkxOqIQW"
-    access_token = "1225923114262986752-ptQOzWCrVUUE4F8zkHEd1iLRymgJRl"
-    access_token_secret = "M91Cwf0q02KgJ4tEMcgcoxqsCdhXFWqyhR4E9rpfpHScA"
+    bearer_token = ""
+    consumer_key = ""
+    consumer_secret = ""
+    access_token = ""
+    access_token_secret = ""
     # bearer_token = os.getenv("BEARER_TOKEN")
     # consumer_key = os.getenv("CONSUMER_KEY")
     # consumer_secret = os.getenv("CONSUMER_SECRET")
